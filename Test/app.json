@@ -8,7 +8,7 @@
   "privacyStatement": "",
   "EULA": "",
   "help": "",
-  "url": "https://github.com/juliandittmann/AL.Template",
+  "url": "https://github.com/juliandittmann/AL.Discord",
   "logo": "",
   "dependencies": [
     {
@@ -64,7 +64,6 @@
       "to": 50199
     }
   ],
-  "contextSensitiveHelpUrl": "https://example.com/help/",
   "features": [
     "TranslationFile"
   ],
