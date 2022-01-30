@@ -1,0 +1,92 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - 'README.md'
+      - '.github/**'
+      - 'Docs/**'
+  workflow_dispatch:
+    push:
+      paths-ignore:
+        - 'README.md'
+        - '.github/**'
+        - 'Docs/**'
+
+env:
+  version: ci
+  appVersion: '19.1'
+  appBuild: ${{github.run_number}}
+  appRevision: 0
+
+defaults:
+  run:
+    shell: PowerShell
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run pipeline
+        uses: juliandittmann/run-alpipeline@v0.1
+        with:
+          version: ${{env.version}}
+          appVersion: ${{env.appVersion}}
+          appBuild: ${{env.appBuild}}
+          appRevision: ${{env.appRevision}}
+          InsiderSasToken: ${{ secrets.InsiderSasToken }}
+          LicenseFile: ${{ secrets.LicenseFile }}
+          CodeSignCertPfxFile: ${{ secrets.CodeSignCertPfxFile }}
+          CodeSignCertPfxPassword: ${{ secrets.CodeSignCertPfxPassword }}
+
+      - name: Save manifest
+        run: |
+          @{ "Name" = "${{ github.event.repository.name }}"; "Version" = "${{env.appVersion}}.${{env.appBuild}}.${{env.appRevision}}" } | ConvertTo-Json | Set-Content "output\manifest.json"
+
+      - name: Publish Test Results
+        if: always()
+        uses: mikepenz/action-junit-report@v1
+        with:
+          report_paths: 'testresults*.xml'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish Artifacts - Apps
+        uses: actions/upload-artifact@v2
+        with:
+          name: Apps
+          path: output/Apps/
+          if-no-files-found: ignore
+
+      - name: Publish Artifacts - Runtime Packages
+        uses: actions/upload-artifact@v2
+        with:
+          name: RuntimePackages
+          path: output/RuntimePackages/
+          if-no-files-found: ignore
+
+      - name: Publish Artifacts - Test Apps
+        uses: actions/upload-artifact@v2
+        with:
+          name: TestApps
+          path: output/TestApps/
+          if-no-files-found: ignore
+
+      - name: Publish Artifacts - Test Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: TestResults
+          path: output/testresults*.xml
+          if-no-files-found: ignore
+
+      - name: Publish Artifacts - Manifest
+        uses: actions/upload-artifact@v2
+        with:
+          name: Manifest
+          path: output/manifest.json
+          if-no-files-found: ignore

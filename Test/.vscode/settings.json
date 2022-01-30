@@ -1,0 +1,6 @@
+{
+    "al.codeAnalyzers": [],
+    "CRS.ObjectNamePrefix": "jdi Template Test ",
+    "CRS.RemovePrefixFromFilename": true,
+    "al.ruleSetPath": ".codeanalysis/ignoreRuleset.ruleset.json",
+}

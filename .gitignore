@@ -1,0 +1,10 @@
+**/Packages/**
+*/.vscode/**
+*/.alpackages/**
+*/.altestrunner/**
+*/Translations/*.g.xlf
+**/**.app
+**/**.log
+**/**.tmp
+!*/.vscode/settings.json
+!*/.vscode/extensions.json

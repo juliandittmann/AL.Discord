@@ -1,0 +1,40 @@
+{
+    "name": "AL.Template",
+    "memoryLimit": "6G",
+    "installApps": "",
+    "previousApps": "",
+    "appFolders": "App",
+    "testFolders": "Test",
+    "installTestFramework": true,
+    "installTestLibraries": true,
+    "installPerformanceToolkit": false,
+    "doNotSignApps": false,
+    "enableCodeCop": false,
+    "enableAppSourceCop": false,
+    "enablePerTenantExtensionCop": true,
+    "enableUICop": true,
+    "bcContainerHelperVersion": "preview",
+    "additionalCountries": "",
+    "vaultNameForLocal": "BuildVariables",
+    "versions": [
+        {
+            "version": "ci",
+            "artifact": "///us/Current",
+            "cacheImage": true,
+            "CreateRuntimePackages": true
+        },
+        {
+            "version": "current",
+            "artifact": "///us/Current",
+            "CreateRuntimePackages": true
+        },
+        {
+            "version": "nextmajor",
+            "artifact": "///us/NextMajor/{INSIDERSASTOKEN}"
+        },
+        {
+            "version": "nextminor",
+            "artifact": "///us/NextMinor/{INSIDERSASTOKEN}"
+        }
+    ]
+}
