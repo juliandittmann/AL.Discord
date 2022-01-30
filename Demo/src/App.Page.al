@@ -1,4 +1,4 @@
-page 52500 "jdi Discord App"
+page 52549 "jdi Discord Demo App"
 {
     PageType = Card;
     ApplicationArea = All;

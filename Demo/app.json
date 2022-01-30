@@ -1,0 +1,43 @@
+{
+  "id": "deadcc42-4874-4741-b014-47d8853db8b4",
+  "name": "Discord Demo",
+  "publisher": "Julian Dittmann",
+  "brief": "Discord Demo App",
+  "description": "Discord Demo App",
+  "version": "19.1.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "https://github.com/juliandittmann/AL.Discord",
+  "logo": "",
+  "dependencies": [
+    {
+      "name": "Discord",
+      "publisher": "Julian Dittmann",
+      "version": "19.1.0.0",
+      "id": "c9841816-11a6-46d9-89ab-9ea657a4a92d"
+    }
+  ],
+  "screenshots": [],
+  "application": "19.0.0.0",
+  "platform": "19.0.0.0",
+  "runtime": "8.1",
+  "target": "Cloud",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "idRanges":[
+    {
+      "from": 52549,
+      "to": 52599
+    }
+  ],
+  "features": [
+    "TranslationFile"
+  ],
+  "supportedLocales": [
+    "en-US"
+  ]
+}

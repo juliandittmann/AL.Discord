@@ -3,6 +3,9 @@
 		{
 			"path": "App"
 		},
+        {
+            "path": "Demo"
+        },
 		{
 			"path": "Test"
 		}

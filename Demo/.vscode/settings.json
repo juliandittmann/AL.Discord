@@ -1,0 +1,6 @@
+{
+    "al.codeAnalyzers": [],
+    "CRS.ObjectNamePrefix": "jdi Discord Demo ",
+    "CRS.RemovePrefixFromFilename": true,
+    "al.ruleSetPath": ".codeanalysis/ignoreRuleset.ruleset.json",
+}
