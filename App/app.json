@@ -1,6 +1,6 @@
 {
-  "id": "9c30c7cc-475b-4bb3-b9ed-63b83d3627e1",
-  "name": "AL.Template",
+  "id": "c9841816-11a6-46d9-89ab-9ea657a4a92d",
+  "name": "Discord",
   "publisher": "Julian Dittmann",
   "brief": "",
   "description": "",
@@ -8,7 +8,7 @@
   "privacyStatement": "",
   "EULA": "",
   "help": "",
-  "url": "https://github.com/juliandittmann/AL.Template",
+  "url": "https://github.com/juliandittmann/AL.Discord",
   "logo": "",
   "dependencies": [
   ],
@@ -24,8 +24,8 @@
   },
   "idRanges":[
     {
-      "from": 50000,
-      "to": 50099
+      "from": 52500,
+      "to": 52549
     }
   ],
   "contextSensitiveHelpUrl": "https://example.com/help/",

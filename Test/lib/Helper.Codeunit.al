@@ -1,4 +1,4 @@
-codeunit 50100 "jdi Template Test Helper"
+codeunit 50100 "jdi Discord Test Helper"
 {
     procedure Create(TestSuiteName: code[10]; TestCodeunitFilter: Text; EmptyTestSuite: Boolean)
     var

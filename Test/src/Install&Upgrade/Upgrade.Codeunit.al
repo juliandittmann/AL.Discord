@@ -1,4 +1,4 @@
-codeunit 50102 "jdi Template Test Upgrade"
+codeunit 50102 "jdi Discord Test Upgrade"
 {
     Subtype = Upgrade;
 

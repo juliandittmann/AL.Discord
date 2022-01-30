@@ -1,9 +1,9 @@
 {
   "id": "3b110653-d432-41b0-ad8d-93b7a907d5ea",
-  "name": "AL.Template Test",
+  "name": "Discord Test",
   "publisher": "Julian Dittmann",
-  "brief": "AL.Template Test App",
-  "description": "AL.Template Test App",
+  "brief": "Discord Test App",
+  "description": "Discord Test App",
   "version": "19.1.0.0",
   "privacyStatement": "",
   "EULA": "",
@@ -42,10 +42,10 @@
       "id": "23de40a6-dfe8-4f80-80db-d70f83ce8caf"
     },
     {
-      "name": "AL.Template",
+      "name": "Discord",
       "publisher": "Julian Dittmann",
       "version": "19.1.0.0",
-      "id": "9c30c7cc-475b-4bb3-b9ed-63b83d3627e1"
+      "id": "c9841816-11a6-46d9-89ab-9ea657a4a92d"
     }
   ],
   "screenshots": [],
