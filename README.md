@@ -38,4 +38,4 @@ usercontrol("WidgetBot"; "jdi Discord Widgetbot")
 Preview:
 - [apps](https://juliandittmann.blob.core.windows.net/al-discord-preview/latest/apps.zip)
 - [runtimepackages](https://juliandittmann.blob.core.windows.net/al-discord-preview/latest/runtimepackages.zip)
-- [testapps](https://juliandittmann.blob.core.windows.net/al-discord-preview/latest/runtimepackages.zip)
+- [testapps](https://juliandittmann.blob.core.windows.net/al-discord-preview/latest/testapps.zip)
