@@ -27,8 +27,12 @@ usercontrol("WidgetBot"; "jdi Discord Widgetbot")
     ApplicationArea = all;
 
     trigger ControlAddinLoaded()
+    var
+        WidgetBotSetup: Codeunit "jdi Discord Widgetbot Setup";
+        WidgetBotSetupJObject: JsonObject;
     begin
-        CurrPage.WidgetBot.CreateControl('<serverid>', '<channelid>');
+        WidgetBotSetupJObject := WidgetBotSetup.CreateWidgetBotSetup('<serverid>', '<channelid>');
+        CurrPage.WidgetBot.CreateControl(WidgetBotSetupJObject);
     end;
 }
 ```
