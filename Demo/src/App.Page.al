@@ -15,8 +15,12 @@ page 52549 "jdi Discord Demo App"
                 ApplicationArea = all;
 
                 trigger ControlAddinLoaded()
+                var
+                    WidgetBotSetup: Codeunit "jdi Discord Widgetbot Setup";
+                    WidgetBotSetupJObject: JsonObject;
                 begin
-                    CurrPage.WidgetBot.CreateControl('930840323440119858', '930840323440119861');
+                    WidgetBotSetupJObject := WidgetBotSetup.CreateWidgetBotSetup('930840323440119858', '930840323440119861');
+                    CurrPage.WidgetBot.CreateControl(WidgetBotSetupJObject);
                 end;
             }
         }

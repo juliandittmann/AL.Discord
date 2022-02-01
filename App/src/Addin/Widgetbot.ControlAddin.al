@@ -14,5 +14,5 @@ controladdin "jdi Discord Widgetbot"
         './src/Addin/Script/Startup.js';
 
     event ControlAddinLoaded();
-    procedure CreateControl(ServerId: Text; ChannelId: Text)
+    procedure CreateControl(WidgetBotSetupJObject: JsonObject);
 }

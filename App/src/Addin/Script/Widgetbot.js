@@ -6,8 +6,8 @@ var Widgetbot;
     };
 
     //Show Widgetbot
-    Widgetbot.show = function (ServerId,ChannelId) {
-        var Html = Widgetbot.getHtml(ServerId,ChannelId);
+    Widgetbot.show = function (Setup) {
+        var Html = Widgetbot.getHtml(Setup);
         $navControlContainer.append(Html);
     }
 
@@ -17,9 +17,9 @@ var Widgetbot;
     }
 
     //Get HTML-Content for "Widgetbot"
-    Widgetbot.getHtml = function (ServerId,ChannelId) {
+    Widgetbot.getHtml = function (Setup) {
         var Html = '';
-        Html += '<widgetbot id="widgetbot" server="'+ ServerId +'" channel="' + ChannelId +'" width="100%" height="98%"></widgetbot>';
+        Html += '<widgetbot id="widgetbot" server="'+ Setup.serverid +'" channel="' + Setup.channelid +'" width="'+ Setup.width +'" height="'+ Setup.height + '"></widgetbot>';
         Html += '<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>';
         return Html;
     }

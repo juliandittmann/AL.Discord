@@ -1,10 +1,9 @@
 /**
  * Called from BC
- * @param {Text} ServerId 
- * @param {Text} ChannelId 
+ * @param {JSON} WidgetBotJObject
  */
- function CreateControl(ServerId, ChannelId)
+ function CreateControl(WidgetBotJObject)
  {
-    Widgetbot.show(ServerId,ChannelId);
+    Widgetbot.show(WidgetBotJObject);
  }
  
