@@ -35,13 +35,13 @@ jobs:
         id: azureGetSecretAction
 
       - name: Run pipeline
-        uses: juliandittmann/run-alpipeline@v0.1
+        uses: juliandittmann/run-alpipeline@v0.3
         with:
           version: ${{env.version}}
           appVersion: ${{env.appVersion}}
           appBuild: ${{env.appBuild}}
           appRevision: ${{env.appRevision}}
-          ApplicationInsightsKey: ${{ secrets.ApplicationInsightsKey }}
+          ApplicationInsightsConnectionString: ${{ secrets.ApplicationInsightsConnectionString }}
           InsiderSasToken: ${{ steps.azureGetSecretAction.outputs.InsiderSasToken }}
           CodeSignCertPfxFile: ${{ steps.azureGetSecretAction.outputs.CodeSignCertPfxFile }}
           CodeSignCertPfxPassword: ${{ steps.azureGetSecretAction.outputs.CodeSignCertPfxPassword }}
