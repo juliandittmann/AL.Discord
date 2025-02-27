@@ -1,5 +1,14 @@
+/// <summary>
+/// This codeunit is used to create a test suite and add test methods to it.
+/// </summary>
 codeunit 50100 "jdi Discord Test Helper"
 {
+    /// <summary>
+    /// This function is used to create a test suite and add test methods to it.
+    /// </summary>
+    /// <param name="TestSuiteName"></param>
+    /// <param name="TestCodeunitFilter"></param>
+    /// <param name="EmptyTestSuite"></param>
     procedure Create(TestSuiteName: code[10]; TestCodeunitFilter: Text; EmptyTestSuite: Boolean)
     var
         ALTestSuite: Record "AL Test Suite";
@@ -19,6 +28,11 @@ codeunit 50100 "jdi Discord Test Helper"
 
     end;
 
+    /// <summary>
+    /// This function is used to try to insert a test suite.
+    /// </summary>
+    /// <param name="TestSuiteName"></param>
+    /// <param name="ALTestSuite"></param>
     local procedure TryInsertTestSuite(TestSuiteName: code[10]; var ALTestSuite: Record "AL Test Suite")
     begin
         if ALTestSuite.Get(TestSuiteName) then
@@ -30,6 +44,12 @@ codeunit 50100 "jdi Discord Test Helper"
         ALTestSuite.Insert(true);
     end;
 
+    /// <summary>
+    /// This function is used to get test codeunits.
+    /// </summary>
+    /// <param name="TestCodeunitFilter"></param>
+    /// <param name="ToAllObjWithCaption"></param>
+    /// <returns></returns>
     local procedure GetTestCodeunits(TestCodeunitFilter: Text; VAR ToAllObjWithCaption: Record AllObjWithCaption): Boolean;
     var
         FromAllObjWithCaption: Record AllObjWithCaption;

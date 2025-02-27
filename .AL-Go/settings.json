@@ -1,6 +1,16 @@
 {
   "country": "us",
-  "appFolders": [ "App"],
-  "testFolders": [ "Demo", "Test"],
-  "bcptTestFolders": []
+  "alDoc": {
+    "continuousDeployment": true,
+    "groupByProject": true
+  },
+  "appFolders": [
+    "App"
+  ],
+  "testFolders": [
+    "Test",
+    "Demo"
+  ],
+  "bcptTestFolders": [],
+  "repoVersion": "25.0"
 }

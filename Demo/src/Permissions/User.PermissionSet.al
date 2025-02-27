@@ -1,4 +1,7 @@
-permissionset 52549 "jdi Discord DemoUser"
+/// <summary>
+/// This permission set is used to define the jdi Discord DemoUser permission set.
+/// </summary>
+permissionset 52549 "jdi Discord Demo User"
 {
     Assignable = false;
     IncludedPermissionSets = "jdi Discord User";

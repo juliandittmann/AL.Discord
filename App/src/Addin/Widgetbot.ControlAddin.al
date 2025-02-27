@@ -1,3 +1,6 @@
+/// <summary>
+/// WidgetBot Control Addin
+/// </summary>
 controladdin "jdi Discord Widgetbot"
 {
     VerticalStretch = true;
@@ -14,5 +17,10 @@ controladdin "jdi Discord Widgetbot"
         './src/Addin/Script/Startup.js';
 
     event ControlAddinLoaded();
+
+    /// <summary>
+    /// Create Control
+    /// </summary>
+    /// <param name="WidgetBotSetupJObject"></param>
     procedure CreateControl(WidgetBotSetupJObject: JsonObject);
 }
