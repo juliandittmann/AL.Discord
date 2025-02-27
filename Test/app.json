@@ -4,7 +4,7 @@
   "publisher": "Julian Dittmann",
   "brief": "Discord Test App",
   "description": "Discord Test App",
-  "version": "25.0.0.0",
+  "version": "25.1.0.0",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
@@ -44,7 +44,7 @@
     {
       "name": "Discord",
       "publisher": "Julian Dittmann",
-      "version": "25.0.0.0",
+      "version": "25.1.0.0",
       "id": "c9841816-11a6-46d9-89ab-9ea657a4a92d"
     }
   ],
