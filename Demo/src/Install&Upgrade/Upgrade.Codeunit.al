@@ -1,3 +1,6 @@
+/// <summary>
+/// Discord Demo Upgrade
+/// </summary>
 codeunit 52550 "jdi Discord Demo Upgrade"
 {
     Subtype = Upgrade;

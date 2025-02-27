@@ -1,3 +1,6 @@
+/// <summary>
+/// jdi Discord Test Setup
+/// </summary>
 codeunit 50103 "jdi Discord Test Setup"
 {
     Subtype = Test;
@@ -21,8 +24,8 @@ codeunit 50103 "jdi Discord Test Setup"
         LibraryLowerPermissions.SetO365Basic();
 
         //Create Test Data
-        ServerId := LibraryRandom.RandText(50);
-        ChannelId := LibraryRandom.RandText(50);
+        ServerId := Any.AlphanumericText(50);
+        ChannelId := Any.AlphanumericText(50);
 
         //Create WidgetBot Setup JsonObject
         WidgetBotSetupJObject := WidgetbotSetup.CreateWidgetBotSetup(ServerId, ChannelId);
@@ -42,7 +45,7 @@ codeunit 50103 "jdi Discord Test Setup"
 
     var
         Assert: Codeunit Assert;
-        LibraryRandom: codeunit "Library - Random";
+        Any: Codeunit Any;
         LibraryLowerPermissions: Codeunit "Library - Lower Permissions";
 
 }

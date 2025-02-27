@@ -1,3 +1,6 @@
+/// <summary>
+/// jdi Discord Test Upgrade
+/// </summary>
 codeunit 50102 "jdi Discord Test Upgrade"
 {
     Subtype = Upgrade;

@@ -1,3 +1,6 @@
+/// <summary>
+/// Discord Demo App
+/// </summary>
 page 52549 "jdi Discord Demo App"
 {
     PageType = Card;

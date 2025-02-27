@@ -1,3 +1,6 @@
+/// <summary>
+/// jdi Discord Test Helper
+/// </summary>
 codeunit 50101 "jdi Discord Test Install"
 {
     Subtype = Install;
