@@ -1,5 +1,6 @@
 {
   "type": "PTE",
   "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main",
-  "templateSha": "ba4fc723e4c024674baa6a53ef1777402cfbaab0"
+  "templateSha": "ba4fc723e4c024674baa6a53ef1777402cfbaab0",
+  "runs-on": "ubuntu-latest"
 }
