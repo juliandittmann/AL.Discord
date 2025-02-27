@@ -2,7 +2,7 @@
   "country": "us",
   "alDoc": {
     "continuousDeployment": true,
-    "groupByProject" true
+    "groupByProject": true
   },
   "appFolders": [
     "App"
