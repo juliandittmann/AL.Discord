@@ -1,4 +1,4 @@
-[![Current](https://github.com/juliandittmann/AL.Discord/actions/workflows/current.yml/badge.svg)](https://github.com/juliandittmann/AL.Discord/actions/workflows/current.yml)
+[![ CI/CD](https://github.com/juliandittmann/AL.Discord/actions/workflows/CICD.yaml/badge.svg)](https://github.com/juliandittmann/AL.Discord/actions/workflows/CICD.yaml)
 
 [![license](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 
@@ -36,10 +36,3 @@ usercontrol("WidgetBot"; "jdi Discord Widgetbot")
     end;
 }
 ```
-
-## Download links
-
-Preview:
-- [apps](https://juliandittmann.blob.core.windows.net/al-discord-preview/latest/apps.zip)
-- [runtimepackages](https://juliandittmann.blob.core.windows.net/al-discord-preview/latest/runtimepackages.zip)
-- [testapps](https://juliandittmann.blob.core.windows.net/al-discord-preview/latest/testapps.zip)
